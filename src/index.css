@@ -4,17 +4,17 @@
 
 @layer base {
   :root {
-    /* Dark theme with cyan/teal accent */
-    --background: 0 0% 0%;
+    /* Dark theme with orange/red accent — RSQ-CLUB */
+    --background: 0 0% 4%;
     --foreground: 0 0% 100%;
 
-    --card: 0 0% 4%;
+    --card: 0 0% 7%;
     --card-foreground: 0 0% 100%;
 
-    --popover: 0 0% 4%;
+    --popover: 0 0% 7%;
     --popover-foreground: 0 0% 100%;
 
-    --primary: 174 100% 50%;
+    --primary: 16 100% 55%;
     --primary-foreground: 0 0% 0%;
 
     --secondary: 0 0% 10%;
@@ -23,39 +23,39 @@
     --muted: 0 0% 25%;
     --muted-foreground: 0 0% 63%;
 
-    --accent: 174 100% 50%;
+    --accent: 16 100% 55%;
     --accent-foreground: 0 0% 0%;
 
     --destructive: 0 100% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 10%;
-    --input: 0 0% 4%;
-    --ring: 174 100% 50%;
+    --border: 0 0% 12%;
+    --input: 0 0% 7%;
+    --ring: 16 100% 55%;
 
     --radius: 0.75rem;
 
     --sidebar-background: 0 0% 4%;
     --sidebar-foreground: 0 0% 100%;
-    --sidebar-primary: 174 100% 50%;
+    --sidebar-primary: 16 100% 55%;
     --sidebar-primary-foreground: 0 0% 0%;
     --sidebar-accent: 0 0% 10%;
     --sidebar-accent-foreground: 0 0% 100%;
     --sidebar-border: 0 0% 10%;
-    --sidebar-ring: 174 100% 50%;
+    --sidebar-ring: 16 100% 55%;
   }
 
   .dark {
-    --background: 0 0% 0%;
+    --background: 0 0% 4%;
     --foreground: 0 0% 100%;
 
-    --card: 0 0% 4%;
+    --card: 0 0% 7%;
     --card-foreground: 0 0% 100%;
 
-    --popover: 0 0% 4%;
+    --popover: 0 0% 7%;
     --popover-foreground: 0 0% 100%;
 
-    --primary: 174 100% 50%;
+    --primary: 16 100% 55%;
     --primary-foreground: 0 0% 0%;
 
     --secondary: 0 0% 10%;
@@ -64,24 +64,24 @@
     --muted: 0 0% 25%;
     --muted-foreground: 0 0% 63%;
 
-    --accent: 174 100% 50%;
+    --accent: 16 100% 55%;
     --accent-foreground: 0 0% 0%;
 
     --destructive: 0 100% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 10%;
-    --input: 0 0% 4%;
-    --ring: 174 100% 50%;
+    --border: 0 0% 12%;
+    --input: 0 0% 7%;
+    --ring: 16 100% 55%;
 
     --sidebar-background: 0 0% 4%;
     --sidebar-foreground: 0 0% 100%;
-    --sidebar-primary: 174 100% 50%;
+    --sidebar-primary: 16 100% 55%;
     --sidebar-primary-foreground: 0 0% 0%;
     --sidebar-accent: 0 0% 10%;
     --sidebar-accent-foreground: 0 0% 100%;
     --sidebar-border: 0 0% 10%;
-    --sidebar-ring: 174 100% 50%;
+    --sidebar-ring: 16 100% 55%;
   }
 }
 
@@ -133,14 +133,29 @@
   @keyframes glow {
     0%,
     100% {
-      box-shadow: 0 0 20px rgba(0, 255, 209, 0.4);
+      box-shadow: 0 0 20px rgba(255, 100, 20, 0.4);
     }
     50% {
-      box-shadow: 0 0 40px rgba(0, 255, 209, 0.7);
+      box-shadow: 0 0 40px rgba(255, 100, 20, 0.7);
     }
   }
 
   .animate-glow {
     animation: glow 3s ease-in-out infinite;
+  }
+
+  @keyframes pulse-ring {
+    0% {
+      transform: scale(0.9);
+      opacity: 0.8;
+    }
+    100% {
+      transform: scale(1.4);
+      opacity: 0;
+    }
+  }
+
+  .animate-pulse-ring {
+    animation: pulse-ring 2s ease-out infinite;
   }
 }
