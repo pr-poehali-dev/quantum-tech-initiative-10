@@ -117,10 +117,12 @@ const Index = () => {
       {/* Header */}
       <header className="fixed top-0 w-full bg-background/90 backdrop-blur-2xl border-b border-accent/20 z-50">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-          <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-accent to-accent/60 flex items-center justify-center">
-              <Icon name="Volume2" size={18} className="text-black" />
-            </div>
+          <div className="flex items-center gap-2">
+            <img
+              src="https://cdn.poehali.dev/projects/2b3966df-1a32-42a7-aca8-ac27ee35d2a1/bucket/e25e2cad-47ea-4e7a-a4f3-8b5f5f159eda.jpeg"
+              alt="RSQ-CLUB"
+              className="h-10 w-10 object-contain rounded-lg bg-white p-0.5"
+            />
             <div className="font-display font-black text-xl tracking-tight bg-gradient-to-r from-white via-accent to-accent/70 bg-clip-text text-transparent">
               RSQ-CLUB
             </div>
@@ -191,12 +193,19 @@ const Index = () => {
                 Официальный чемпионат России по автозвуку
               </span>
             </div>
-            <h1 className="text-6xl lg:text-8xl font-display font-black leading-none mb-6 tracking-tighter">
-              <span className="bg-gradient-to-br from-white via-white to-white/50 bg-clip-text text-transparent">
-                RSQ
-              </span>
-              <span className="text-accent">—CLUB</span>
-            </h1>
+            <div className="flex items-center gap-6 mb-6">
+              <img
+                src="https://cdn.poehali.dev/projects/2b3966df-1a32-42a7-aca8-ac27ee35d2a1/bucket/e25e2cad-47ea-4e7a-a4f3-8b5f5f159eda.jpeg"
+                alt="RSQ-CLUB Logo"
+                className="w-24 h-24 object-contain rounded-2xl bg-white p-1 shadow-2xl shadow-accent/20"
+              />
+              <h1 className="text-6xl lg:text-8xl font-display font-black leading-none tracking-tighter">
+                <span className="bg-gradient-to-br from-white via-white to-white/50 bg-clip-text text-transparent">
+                  RSQ
+                </span>
+                <span className="text-accent">—CLUB</span>
+              </h1>
+            </div>
             <p className="text-2xl lg:text-3xl font-display font-bold text-white/80 mb-4">
               Соревнования по автозвуку
             </p>
@@ -589,9 +598,11 @@ const Index = () => {
           <div className="flex flex-col md:flex-row justify-between items-start gap-10 mb-10">
             <div>
               <div className="flex items-center gap-3 mb-3">
-                <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-accent to-accent/60 flex items-center justify-center">
-                  <Icon name="Volume2" size={18} className="text-black" />
-                </div>
+                <img
+                  src="https://cdn.poehali.dev/projects/2b3966df-1a32-42a7-aca8-ac27ee35d2a1/bucket/e25e2cad-47ea-4e7a-a4f3-8b5f5f159eda.jpeg"
+                  alt="RSQ-CLUB"
+                  className="h-9 w-9 object-contain rounded-lg bg-white p-0.5"
+                />
                 <div className="font-display font-black text-xl bg-gradient-to-r from-white to-accent/70 bg-clip-text text-transparent">
                   RSQ-CLUB
                 </div>
